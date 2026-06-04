@@ -8,7 +8,7 @@ name = input("Enter pet name: ").strip()
 pet.set_name(name)
 
 animal_type = input("Enter animal type: ").strip()
-pet.animal_type(animal_type)
+pet.set_animal_type(animal_type)
 
 while True:
     try:
@@ -20,4 +20,8 @@ while True:
         break
     except ValueError:
         print("Please enter a valid integer.")
-    
+
+print("\nPET INFORMATION")
+print(f"Name: {pet.get_name()}")
+print(f"type: {pet.get_animal_type()}")
+print(f"age: {pet.get_age()}")
